@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresa a tu cuenta</title>
+    <link rel="stylesheet" href="stylo inicio.css">
+</head>
+<body>
+    <div class="formulario">
+        <!-- Título del formulario -->
+        <h1>Ingresa a tu cuenta</h1>
+        
+        <form action="iniciar_cuenta.jsp">
+            <!-- Campo para email o teléfono -->
+            <div class="email-telefono">
+                <label for="email-telefono">E-mail o Teléfono</label>
+                <input type="text" name="email-telefono" required>
+            </div>
+            <!-- Campo para contraseña -->
+            <div class="contrasena">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" name="contrasena" required>
+            </div>
+            <!-- Botón para enviar el formulario -->
+            <div class="enviar">
+                <input type="submit" value="Crear Cuenta">
+            </div>
+        </form>
+        
+        <!-- Enlace para registrarse -->
+        <p>¿Ya tienes cuenta? <a href="Crear cuenta.html">Regístrate</a></p>
+    </div>
+</body>
+</html>

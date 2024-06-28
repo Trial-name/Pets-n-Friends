@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Estilos para la sección principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Estilo para la sección izquierda */
+.left-section {
+    width: 65%;
+}
+
+.left-section h2 {
+    margin-top: 0;
+}
+
+.shipping, .payment, .order-verification {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.order-item img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Estilo para la sección derecha */
+.right-section {
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-section h2 {
+    margin-top: 0;
+}
+
+.right-section p {
+    margin: 10px 0;
+}
+
+.right-section h3 {
+    margin: 20px 0;
+}
+
+.coupon {
+    display: flex;
+    align-items: center;
+}
+
+.coupon label {
+    margin-right: 10px;
+}
+
+.coupon input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para el pie de página */
+footer {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+}

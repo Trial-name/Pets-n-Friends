@@ -1,0 +1,142 @@
+/* Estilo para el cuerpo de la página */
+body {
+    /* Fuente global de la página */
+    font-family: Arial, sans-serif;
+    /* Uso de flexbox para centrar el contenido vertical y horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Altura de la ventana gráfica completa */
+    height: 100vh;
+    /* Sin margen para el cuerpo */
+    margin: 0;
+    /* Color de fondo */
+    background-color: #f5f5f5;
+}
+
+/* Estilo para el contenedor del formulario */
+.formulario {
+    /* Fondo blanco para el formulario */
+    background: #fff;
+    /* Espaciado interno alrededor del contenido */
+    padding: 20px;
+    /* Bordes redondeados */
+    border-radius: 10px;
+    /* Sombra alrededor del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Ancho máximo y ajuste del ancho al 100% del contenedor padre */
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Estilo para el encabezado del formulario */
+.formulario h1 {
+    /* Espaciado inferior */
+    margin-bottom: 10px;
+    /* Tamaño de fuente */
+    font-size: 24px;
+    /* Centrando el texto */
+    text-align: center;
+}
+
+/* Estilo para los párrafos dentro del formulario */
+.formulario p {
+    /* Espaciado inferior */
+    margin-bottom: 20px;
+    /* Centrando el texto */
+    text-align: center;
+    /* Color del texto */
+    color: #888;
+}
+
+/* Estilo para el formulario */
+.formulario form {
+    /* Uso de flexbox para el formulario */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para cada contenedor de campo dentro del formulario */
+.formulario div {
+    /* Espaciado inferior */
+    margin-bottom: 15px;
+}
+
+/* Estilo para las etiquetas */
+.formulario label {
+    /* Espaciado inferior */
+    margin-bottom: 5px;
+    /* Negrita para las etiquetas */
+    font-weight: bold;
+}
+
+/* Estilo para los campos de entrada de texto, email y contraseña */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"] {
+    /* Ancho completo del contenedor padre */
+    width: 100%;
+    /* Espaciado interno */
+    padding: 10px;
+    /* Borde del campo */
+    border: 1px solid #ccc;
+    /* Bordes redondeados */
+    border-radius: 5px;
+    /* Box-sizing para incluir padding y borde en el ancho total */
+    box-sizing: border-box;
+}
+
+/* Estilo para el contenedor de nombre y apellido */
+.nombre-apellido {
+    /* Uso de flexbox para colocar los elementos en una fila */
+    display: flex;
+    /* Espacio entre los elementos */
+    justify-content: space-between;
+}
+
+/* Estilo para los campos de nombre y apellido */
+.formulario .Nombre,
+.formulario .Apellido {
+    /* Ancho del 48% del contenedor padre */
+    width: 48%;
+}
+
+/* Estilo para el contenedor de envío */
+.formulario .Enviar {
+    /* Centrando el contenido */
+    text-align: center;
+}
+
+/* Estilo para el botón de envío */
+.formulario .Enviar input[type="submit"] {
+    /* Fondo negro para el botón */
+    background-color: #000;
+    /* Color del texto blanco */
+    color: #fff;
+    /* Espaciado interno */
+    padding: 10px 20px;
+    /* Sin borde */
+    border: none;
+    /* Bordes redondeados */
+    border-radius: 5px;
+    /* Cambia el cursor al pasar sobre el botón */
+    cursor: pointer;
+    /* Ancho completo del contenedor padre */
+    width: 100%;
+    /* Tamaño de fuente */
+    font-size: 16px;
+}
+
+/* Estilo para los enlaces dentro del párrafo */
+.formulario p a {
+    /* Color azul para el enlace */
+    color: #007bff;
+    /* Sin subrayado */
+    text-decoration: none;
+}
+
+/* Estilo para los enlaces al pasar el ratón */
+.formulario p a:hover {
+    /* Subrayado al pasar el ratón */
+    text-decoration: underline;
+}

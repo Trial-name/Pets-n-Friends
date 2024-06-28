@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear una Cuenta</title>
+    <link rel="stylesheet" href="stylo.css">
+</head>
+<body>
+    <div class="formulario">
+        <h1>Crear una Cuenta</h1>
+        <p>Ingrese sus Datos para registrarse</p>
+        <form action="Crear_usuario.jsp">
+            <div class="nombre-apellido">
+                <div class="Nombre">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="Nombre" placeholder="Nombre" required>
+                </div>
+                <div class="Apellido">
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" name="Apellido" required>
+                </div>
+            </div>
+            <div class="email">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="Telefono">
+                <label for="Telefono">Teléfono</label>
+                <input type="text" name="Telefono" required>
+            </div>
+            <div class="Contrasena">
+                <label for="Contrasena">Contraseña</label>
+                <input type="password" name="Contrasena" required>
+            </div>
+            <div class="ConfirmarContrasena">
+                <label for="ConfirmarContrasena">Confirmar Contraseña</label>
+                <input type="password" name="ConfirmarContrasena" required>
+            </div>
+            <div class="Enviar">
+                <input type="submit" value="Crear Cuenta">
+            </div>
+        </form>
+        <p>¿Ya tienes cuenta? <a href="iniciar cuenta.html">Inicia sesión</a></p>
+    </div>
+</body>
+</html>
