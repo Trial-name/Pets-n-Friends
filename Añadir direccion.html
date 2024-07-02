@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Direcciones</title>
-    <link rel="stylesheet" href="unido.css">  </head>
+    <link rel="stylesheet" href="unido.css" />
+  </head>
   <body>
     <header>
       <div class="top-nav">
@@ -22,7 +23,7 @@
         <nav>
           <a href="#">Wishlist</a>
           <a href="#">Órdenes</a>
-          <a href="#"><img src="icons-carrito-de-compras.gif" alt="Carrito"></a>
+          <a href="#"><img src="icons-carrito-de-compras.gif" alt="Carrito" /></a>
         </nav>
       </div>
       <div class="bottom-nav">
@@ -53,19 +54,80 @@
         </div>
         <div class="new-address">
           <h2>Añadir nueva dirección</h2>
-          <form action="AñadirDireccion.jsp" method="post">
+          <form action="addAddress.jsp" method="post">
             <label for="name">Nombre</label>
             <input type="text" id="name" name="name" required />
             <label for="phone">Teléfono</label>
             <input type="text" id="phone" name="phone" required />
             <label for="address">Dirección</label>
             <input type="text" id="address" name="address" required />
+
             <label for="neighborhood">Corregimiento</label>
-            <input type="text" id="neighborhood" name="neighborhood" required />
+            <select name="neighborhood" id="neighborhood" required>
+              <option value="" selected disabled>Seleccionar uno</option>
+              <option value="Ancón">Ancón</option>
+              <option value="Bella Vista">Bella Vista</option>
+              <option value="Calidonia">Calidonia</option>
+              <option value="Curundú">Curundú</option>
+              <option value="El Chorrillo">El Chorrillo</option>
+              <option value="Juan Díaz">Juan Díaz</option>
+              <option value="Las Cumbres">Las Cumbres</option>
+              <option value="Pacora">Pacora</option>
+              <option value="Parque Lefevre">Parque Lefevre</option>
+              <option value="Pueblo Nuevo">Pueblo Nuevo</option>
+              <option value="Río Abajo">Río Abajo</option>
+              <option value="San Felipe">San Felipe</option>
+              <option value="San Francisco">San Francisco</option>
+              <option value="Santa Ana">Santa Ana</option>
+              <option value="Tocumen">Tocumen</option>
+              <option value="Amelia Denis de Icaza">Amelia Denis de Icaza</option>
+              <option value="Belisario Frías">Belisario Frías</option>
+              <option value="José Domingo Espinar">José Domingo Espinar</option>
+              <option value="Mateo Iturralde">Mateo Iturralde</option>
+              <option value="Omar Torrijos">Omar Torrijos</option>
+              <option value="Rufina Alfaro">Rufina Alfaro</option>
+              <option value="Victoriano Lorenzo">Victoriano Lorenzo</option>
+              <option value="Taboga">Taboga</option>
+              <option value="Chepo">Chepo</option>
+              <option value="Cañita">Cañita</option>
+              <option value="Chepillo">Chepillo</option>
+              <option value="El Llano">El Llano</option>
+              <option value="Las Margaritas">Las Margaritas</option>
+              <option value="Santa Cruz de Chinina">Santa Cruz de Chinina</option>
+              <option value="Tortí">Tortí</option>
+              <option value="Chimán">Chimán</option>
+              <option value="Pedro Miguel">Pedro Miguel</option>
+              <option value="24 de Diciembre">24 de Diciembre</option>
+              <option value="Las Mañanitas">Las Mañanitas</option>
+            </select>
+
             <label for="district">Distrito</label>
-            <input type="text" id="district" name="district" required />
+            <select name="district" id="district" required>
+              <option value="" selected disabled>Seleccionar uno</option>
+              <option value="Panama">Panamá</option>
+              <option value="Bocas del Toro">Bocas del Toro</option>
+              <option value="Cocle">Coclé</option>
+              <option value="Colon">Colón</option>
+              <option value="Chiriqui">Chiriquí</option>
+              <option value="Darien">Darién</option>
+              <option value="Veraguas">Veraguas</option>
+            </select>
+
             <label for="province">Provincia</label>
-            <input type="text" id="province" name="province" required />
+            <select name="province" id="province" required>
+              <option value="" selected disabled>Seleccionar uno</option>
+              <option value="Bocas del Toro">Bocas del Toro</option>
+              <option value="Chiriquí">Chiriquí</option>
+              <option value="Coclé">Coclé</option>
+              <option value="Colón">Colón</option>
+              <option value="Darién">Darién</option>
+              <option value="Herrera">Herrera</option>
+              <option value="Los Santos">Los Santos</option>
+              <option value="Panamá">Panamá</option>
+              <option value="Panamá Oeste">Panamá Oeste</option>
+              <option value="Veraguas">Veraguas</option>
+            </select>
+
             <button type="submit">Añadir</button>
           </form>
         </div>
