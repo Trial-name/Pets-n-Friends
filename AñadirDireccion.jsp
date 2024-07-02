@@ -20,7 +20,7 @@
         
             // Establecer conexión
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection dbconnection = DriverManager.getConnection(jdbc:mysql://localhost:3306/petsfriends, root,);
+            Connection dbconnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/petsfriends", "root","");
             
             // Crear una declaración SQL para insertar datos
             String sql = "INSERT INTO direccion_cliente (nombre, telefono, direccion, corregimiento, distrito, provincia) VALUES (?, ?, ?, ?, ?, ?)";
