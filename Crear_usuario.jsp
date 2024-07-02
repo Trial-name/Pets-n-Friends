@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ page import="java.lang.*" %>
+<%@ page import="java.sql.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,6 +24,8 @@ Connection dbconection = DriverManager.getConnection("jdbc:mysql://localhost:330
 Statement state = dbconection.createStatement();
 String a = "INSERT INTO cuenta_usuario (nombre, apellido, email, telefono, contrasena)VALUE('"+nombre+"','"+apellido+"','"+email+"', "+telefono+",'"+contrasena+"')";
 state.executeUpdate(a);
+
 %>
+<%  response.sendRedirect("iniciar cuenta.html"); %>
 </body>
 </html>
