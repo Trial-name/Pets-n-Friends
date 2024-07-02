@@ -10,8 +10,8 @@
 </head>
 <body>
 	<%
-	String email = request.getParameter("email");
-	String contrasena = request.getParameter("Contrasena");
+	String email = request.getParameter("email-telefono");
+	String contrasena = request.getParameter("contrasena");
 	
 	
 
@@ -23,21 +23,16 @@ PreparedStatement verificar = dbconection.prepareStatement("SELECT * FROM cuenta
 verificar.setString(1, email);
 verificar.setString(2, contrasena);
 
-ResultSet resultSet = verificar.executeQuery();
+ResultSet resultado = verificar.executeQuery();
 String msg;
-if (resultSet.next()) {
-    session.setAttribute("email", email);
+if (resultado.next()) {
     response.sendRedirect("Inicio.html");  // Redirigir a la página principal
- 
-} else {
+}
+ else{
     response.sendRedirect("iniciar cuenta.html?error=invalid");  // Redirigir a la página de login con un mensaje de error
     msg = "<h1 style='color: red;'>****ERROR*** <br> USUARIO INCORRECTO</h1>";
-}
+ }
 
 %>
-
-
-
-
 </body>
 </html>
