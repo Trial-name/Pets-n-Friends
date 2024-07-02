@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Añadir Dirección</title>
 </head>
 <body>
-<h1> Se ha añadido Correctamente la direccion</h1>
     <% 
         String nombre = request.getParameter("name");
         String telefono = request.getParameter("phone");
@@ -23,6 +23,12 @@
         String sql = "INSERT INTO direccion_cliente (nombre, telefono, direccion, corregimiento, distrito, provincia) VALUES ('"+nombre+"', '"+telefono+"','"+direccion+"' , '"+corregimiento+"', '"+distrito+"' ,'"+provincia+"' )";
         
           state.executeUpdate(sql);
+          
+          if (sql != null)  {
+        	  %>
+        	  <h1>La dirección se añadió correctamente.</h1>
+        	  <%
+          }
           %>
           </body>
 </html>
