@@ -404,3 +404,14 @@ main {
 .order-actions .cart-btn:focus {
     background-color: #d84315;
 }
+
+.Integrante
+{
+    text-align: center;
+}
+
+.Integrante-img
+{
+    height: 200px;
+    width: 200px;
+}
