@@ -155,12 +155,6 @@ nav a {
     color: #000;
 }
 
-.noticia-img
-{
-    height: 100px;
-    width: 100px;
-}
-
 /* css de añadir direccion*/
 
 
@@ -410,14 +404,48 @@ main {
 .order-actions .cart-btn:focus {
     background-color: #d84315;
 }
-
-.Integrante
-{
-    text-align: center;
+/* Estilos para el formulario de dirección */
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-.Integrante-img
-{
-    height: 200px;
-    width: 200px;
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 22px); /* Ajustar el ancho para compensar el padding y el borde */
+}
+
+form select {
+  appearance: none; /* Ocultar el estilo predeterminado del selector */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 14l6-6H4l6 6z" fill="%23000"/></svg>'); /* Agregar una flecha personalizada */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 30px; /* Ajustar el espacio para la flecha */
+}
+
+form button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+form button:hover,
+form button:focus {
+  background-color: #444;
+  outline: none;
 }
