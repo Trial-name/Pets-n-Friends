@@ -15,14 +15,6 @@
         String corregimiento = request.getParameter("neighborhood");
         String distrito = request.getParameter("district");
         String provincia = request.getParameter("province");
-     // Validación básica para asegurar que los campos requeridos no estén vacíos
-        if (nombre == null || telefono == null || direccion == null || corregimiento == null || distrito == null || provincia == null ||
-            nombre.isEmpty() || telefono.isEmpty() || direccion.isEmpty() || corregimiento.isEmpty() || distrito.isEmpty() || provincia.isEmpty()) {
-%>
-            <p>Error: Todos los campos son obligatorios.</p>
-<%
-            return; // Terminar la ejecución si algún campo está vacío
-        }
 
         try {
             // Configuración de la conexión a la base de datos
@@ -31,7 +23,7 @@
             String password = "";
             
             // Establecer conexión
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             Connection dbconnection = DriverManager.getConnection(url, username, password);
             
             // Crear una declaración SQL para insertar datos
@@ -44,10 +36,8 @@
             statement.setString(5, distrito);
             statement.setString(6, provincia);
             
-            // Ejecutar la inserción de datos
             int rows = statement.executeUpdate();
 
-            // Cerrar recursos
             statement.close();
             dbconnection.close();
 
