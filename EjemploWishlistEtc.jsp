@@ -77,7 +77,18 @@
                 {
                     String tipoSangre = san.getString("Tipo_sangre");
                 out.println("<h5>Tipo de Sangre " + tipoSangre + "</h5><br><br>");
-                }  
+                }
+
+                out.println("<h5>Teléfonos</h5><br>");
+                st = conn.prepareStatement("Select num_telP from Tel_Paciente where ID_Paciente=?");
+                st.setString(1, Integer.toString(idPaciente));
+                san = st.executeQuery();
+                while(san.next())
+                {
+                	String tel = san.getString("num_telP");
+                	out.println("<h5>" + tel + "</h5><br>");
+                }
+                out.println("<br><br><br>");
             }
         %>
 
