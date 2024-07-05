@@ -1,88 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Configuración de caracteres y viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
     <title>Checkout</title>
-    <!-- Enlaces a las hojas de estilos CSS -->
-    <link rel="stylesheet" href="stylo checkout.css ">
+    <!-- Enlace a la hoja de estilos CSS -->
     <link rel="stylesheet" href="unido.css">
 </head>
 <body>
+    <!-- Encabezado de la página -->
     <header>
-        <div class="top-bar">
-            <div class="left">
-                <!-- Saludo al usuario y enlace a promociones -->
-                <span>Hola, [usuario]</span>
+        <!-- Barra superior de navegación -->
+        <div class="top-nav">
+            <!-- Logo con enlace al inicio -->
+            <div class="logo">
+                <a href="Inicio.html"><img src="logo.png" alt="Logo"></a>
             </div>
-            <div class="right">
-                <!-- Enlaces a Wishlist, Órdenes y Carrito -->
-                <a href="#">Wishlist</a>
-                <a href="#">Órdenes</a>
-                <a href="#"><img src="icons-carrito-de-compras.gif" alt="Carrito"></a>
-            </div>
-        </div>
-        <div class="search-bar">
-            <!-- Logo del sitio -->
-            <img src="logo.png" alt="Logo" class="logo">
-            <div class="search">
-                <!-- Barra de búsqueda -->
+            <!-- Navegación principal -->
+            <nav>
+                <a href="#">Hola, [usuario]</a>
+            </nav>
+            <!-- Barra de búsqueda -->
+            <div class="search-bar">
                 <input type="text" placeholder="Search">
                 <button>Buscar</button>
             </div>
-            <div class="advanced-search">
-                <!-- Enlace a búsqueda avanzada -->
-                <a href="#">Búsqueda avanzada</a>
-            </div>
+            <!-- Enlaces secundarios -->
+            <nav>
+                <a href="Wishlist.html">Wishlist</a>
+                <a href="Ordenes.html">Órdenes</a>
+                <a href="carrito.html"><img src="icons-carrito-de-compras.gif" alt="Carrito"></a>
+            </nav>
         </div>
+        <!-- Barra inferior de navegación -->
+        <div class="bottom-nav">
+            <!-- Dirección de envío del usuario -->
+            <a href="#">Enviar a [dirección usuario]</a>
+        </div>
+        <!-- Menú de navegación principal -->
         <nav>
-            <!-- Enlaces de navegación -->
-                <a href="Inicio.html">Inicio</a>
-            <!-- Insertar jsp de categorías -->
+            <a href="Inicio.html">Inicio</a>
+            <a href="Checkout.html">Checkout</a>
+            <a href="Productos.html">Productos</a>
+            <a href="Añadir direccion.html">Añadir dirección</a>
+            <a href="Ordenes.html">Órdenes</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="Wishlist.html">Wishlist</a>
             <a href="Nosotros.html">Nosotros</a>
         </nav>
     </header>
+    <!-- Contenido principal -->
     <main>
-        <div class="left-section">
-            <div class="shipping">
-                <h2>Enviar a</h2>
+        <!-- Contenedor del checkout -->
+        <div class="checkout-container">
+            <!-- Sección izquierda -->
+            <div class="left-section">
                 <!-- Información de envío -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-            </div>
-            <div class="payment">
-                <h2>Pagar con</h2>
+                <div class="shipping">
+                    <h2>Enviar a</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                </div>
                 <!-- Información de pago -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-            </div>
-            <div class="order-verification">
-                <h2>Verifica tu orden</h2>
-                <!-- Lista de productos en la orden -->
-                <div class="order-item">
-                    <img src="product-placeholder.png" alt="Producto">
-                    <p>Producto 1<br>2.22 balboas<br>Crédito</p>
+                <div class="payment">
+                    <h2>Pagar con</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
                 </div>
-                <div class="order-item">
-                    <img src="product-placeholder.png" alt="Producto">
-                    <p>Producto 2<br>2.22 balboas<br>Crédito</p>
+                <!-- Verificación de la orden -->
+                <div class="order-verification">
+                    <h2>Verifica tu orden</h2>
+                    <!-- Detalles de productos en la orden -->
+                    <div class="order-item">
+                        <img src="Productoventa1.png" alt="Producto">
+                        <p>Producto 1<br>2.22 balboas<br>Crédito</p>
+                    </div>
+                    <div class="order-item">
+                        <img src="Productoventa3.png" alt="Producto">
+                        <p>Producto 2<br>2.22 balboas<br>Crédito</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="right-section">
-            <h2>Resumen</h2>
-            <!-- Resumen de costos -->
-            <p>Subtotal: 123.00</p>
-            <p>Envío: 22.30</p>
-            <p>Impuestos: 22.30</p>
-            <h3>Total: 132.45</h3>
-            <!-- Campo para cupón de descuento -->
-            <div class="coupon">
-                <label for="coupon">Cupón:</label>
-                <input type="text" id="coupon" name="coupon">
+            <!-- Sección derecha -->
+            <div class="right-section">
+                <!-- Resumen de la orden -->
+                <h2>Resumen</h2>
+                <p>Subtotal: 123.00</p>
+                <p>Envío: 22.30</p>
+                <p>Impuestos: 22.30</p>
+                <h3>Total: 132.45</h3>
+                <!-- Campo para ingresar cupón de descuento -->
+                <div class="coupon">
+                    <label for="coupon">Cupón:</label>
+                    <input type="text" id="coupon" name="coupon">
+                </div>
             </div>
         </div>
     </main>
+    <!-- Pie de página -->
     <footer>
         <!-- Total a pagar -->
         <p>Total: 4.44 balboas</p>
