@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Órdenes</title>
+    <!-- Enlaces a las hojas de estilo CSS -->
     <link rel="stylesheet" href="Ordenes.css">
     <link rel="stylesheet" href="unido.css">
 </head>
@@ -11,36 +12,42 @@
     <header>
         <div class="top-nav">
             <div class="logo">
-                <a href="Inicio.html">  <img src="logo.png" alt="Logo"></a>
+                <!-- Enlace al inicio con logo -->
+                <a href="Inicio.html"><img src="logo.png" alt="Logo"></a>
             </div>
             <nav>
                 <a href="#">Hola, [usuario]</a>
-                
             </nav>
             <div class="search-bar">
+                <!-- Barra de búsqueda -->
                 <input type="text" placeholder="Search">
                 <button>Buscar</button>
             </div>
             <nav>
+                <!-- Enlaces de navegación -->
                 <a href="Wishlist.html">Wishlist</a>
                 <a href="Ordenes.html">Órdenes</a>
                 <a href="carrito.html"><img src="icons-carrito-de-compras.gif" alt="Carrito"></a>
             </nav>
         </div>
         <div class="bottom-nav">
+            <!-- Enlace para dirección del usuario -->
             <a href="#">Enviar a [dirección usuario]</a>
         </div>
         <nav>
+            <!-- Menú de navegación -->
             <a href="Inicio.html">Inicio</a>
             <a href="Checkout.html">Checkout</a>
             <a href="Categoria.html">Categoria</a>
-            <a href="Añadir direccion.html">Añadir direccioón</a>
-            <a href="Ordenes.html">Ordenes</a>
-            <a href="carrito.html">carrito</a>
+            <a href="Añadir direccion.html">Añadir dirección</a>
+            <a href="Ordenes.html">Órdenes</a>
+            <a href="carrito.html">Carrito</a>
             <a href="Wishlist.html">Wishlist</a>
             <a href="Nosotros.html">Nosotros</a>
+        </nav>
     </header>
     <main>
+        <!-- Sección de filtros de órdenes -->
         <div class="order-filters">
             <button class="filter-btn">TODO</button>
             <button class="filter-btn">A PAGAR</button>
@@ -49,8 +56,10 @@
             <button class="filter-btn">PROCESADO</button>
             <button class="filter-btn">CANCELADO</button>
         </div>
+        <!-- Sección de órdenes -->
         <div class="orders">
             <h2>Órdenes</h2>
+            <!-- Sección de órdenes finalizadas -->
             <section class="order-status">
                 <h3>Finalizado</h3>
                 <div class="order-item">
@@ -67,6 +76,7 @@
                     </div>
                 </div>
             </section>
+            <!-- Sección de órdenes en proceso -->
             <section class="order-status">
                 <h3>En Proceso</h3>
                 <div class="order-item">
