@@ -10,7 +10,6 @@
 <body>
     <% 
         String nombre = request.getParameter("name");
-        String telefono = request.getParameter("phone");
         String direccion = request.getParameter("address");
         String corregimiento = request.getParameter("neighborhood");
         String distrito = request.getParameter("district");
@@ -20,7 +19,7 @@
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection dbconection = DriverManager.getConnection("jdbc:mysql://localhost:3306/petsfriends","root","");
         Statement state = dbconection.createStatement();
-        String sql = "INSERT INTO direccion_cliente (nombre, telefono, direccion, corregimiento, distrito, provincia) VALUES ('"+nombre+"', '"+telefono+"','"+direccion+"' , '"+corregimiento+"', '"+distrito+"' ,'"+provincia+"' )";
+        String sql = "INSERT INTO direccion_cliente (nombre, direccion, corregimiento, distrito, provincia) VALUES ('"+nombre+"' ,'"+direccion+"' , '"+corregimiento+"', '"+distrito+"' ,'"+provincia+"' )";
         
           state.executeUpdate(sql);
           
