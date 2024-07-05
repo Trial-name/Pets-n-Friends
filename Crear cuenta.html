@@ -4,43 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear una Cuenta</title>
+    <!-- Enlace a la hoja de estilos CSS -->
     <link rel="stylesheet" href="stylo.css">
 </head>
 <body>
     <div class="formulario">
         <h1>Crear una Cuenta</h1>
         <p>Ingrese sus Datos para registrarse</p>
+        <!-- Formulario para crear una nueva cuenta -->
         <form action="Crear_usuario.jsp">
             <div class="nombre-apellido">
                 <div class="Nombre">
                     <label for="Nombre">Nombre</label>
+                    <!-- Campo de texto para el nombre -->
                     <input type="text" name="Nombre" placeholder="Nombre" required>
                 </div>
                 <div class="Apellido">
                     <label for="Apellido">Apellido</label>
+                    <!-- Campo de texto para el apellido -->
                     <input type="text" name="Apellido" required>
                 </div>
             </div>
             <div class="email">
                 <label for="email">E-mail</label>
+                <!-- Campo de texto para el correo electrónico -->
                 <input type="email" name="email" required>
             </div>
             <div class="Telefono">
                 <label for="Telefono">Teléfono</label>
+                <!-- Campo de texto para el teléfono -->
                 <input type="text" name="Telefono" required>
             </div>
             <div class="Contrasena">
                 <label for="Contrasena">Contraseña</label>
+                <!-- Campo de texto para la contraseña -->
                 <input type="password" name="Contrasena" required>
             </div>
             <div class="ConfirmarContrasena">
                 <label for="ConfirmarContrasena">Confirmar Contraseña</label>
+                <!-- Campo de texto para confirmar la contraseña -->
                 <input type="password" name="ConfirmarContrasena" required>
             </div>
             <div class="Enviar">
+                <!-- Botón para enviar el formulario -->
                 <input type="submit" value="Crear Cuenta">
             </div>
         </form>
+        <!-- Enlace para iniciar sesión si ya tiene una cuenta -->
         <p>¿Ya tienes cuenta? <a href="iniciar cuenta.html">Inicia sesión</a></p>
     </div>
 </body>
