@@ -9,40 +9,35 @@
 </head>
 <body>
     <header>
-        <div class="top-nav">
-            <div class="logo">
-                <!-- Logo con enlace a la página de inicio -->
-                <a href="Inicio.html"><img src="logo.png" alt="Logo"></a>
+        <div class="top-bar">
+            <div class="left">
+                <!-- Saludo al usuario y enlace a promociones -->
+                <span>Hola, [usuario]</span>
             </div>
-            <nav>
-                <!-- Enlace de bienvenida con el nombre del usuario -->
-                <a href="#">Hola, [usuario]</a>
-            </nav>
-            <div class="search-bar">
+            <div class="right">
+                <!-- Enlaces a Wishlist, Órdenes y Carrito -->
+                <a href="#">Wishlist</a>
+                <a href="#">Órdenes</a>
+                <a href="#"><img src="icons-carrito-de-compras.gif" alt="Carrito"></a>
+            </div>
+        </div>
+        <div class="search-bar">
+            <!-- Logo del sitio -->
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="search">
                 <!-- Barra de búsqueda -->
                 <input type="text" placeholder="Search">
                 <button>Buscar</button>
             </div>
-            <nav>
-                <!-- Enlaces de navegación -->
-                <a href="Wishlist.html">Wishlist</a>
-                <a href="Ordenes.html">Órdenes</a>
-                <a href="carrito.html"><img src="icons-carrito-de-compras.gif" alt="Carrito"></a>
-            </nav>
-        </div>
-        <div class="bottom-nav">
-            <!-- Enlace de dirección del usuario -->
-            <a href="#">Enviar a [dirección usuario]</a>
+            <div class="advanced-search">
+                <!-- Enlace a búsqueda avanzada -->
+                <a href="#">Búsqueda avanzada</a>
+            </div>
         </div>
         <nav>
-            <!-- Más enlaces de navegación -->
-            <a href="Inicio.html">Inicio</a>
-            <a href="Checkout.html">Checkout</a>
-            <a href="Categoria.html">Categoria</a>
-            <a href="Añadir direccion.html">Añadir dirección</a>
-            <a href="Ordenes.html">Órdenes</a>
-            <a href="carrito.html">Carrito</a>
-            <a href="Wishlist.html">Wishlist</a>
+            <!-- Enlaces de navegación -->
+                <a href="Inicio.html">Inicio</a>
+            <!-- Insertar jsp de categorías -->
             <a href="Nosotros.html">Nosotros</a>
         </nav>
     </header>
