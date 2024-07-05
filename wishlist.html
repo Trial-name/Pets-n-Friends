@@ -10,7 +10,7 @@
     <header>
         <div class="top-nav">
             <div class="logo">
-                <a href="Inicio.html">  <img src="logo.png" alt="Logo"></a>
+                <a href="Inicio.html"><img src="logo.png" alt="Logo"></a>
             </div>
             <nav>
                 <a href="#">Hola, [usuario]</a>
@@ -29,26 +29,33 @@
             <a href="#">Enviar a [dirección usuario]</a>
         </div>
         <nav>
-                <a href="Inicio.html">Inicio</a>
-                <a href="Checkout.html">Checkout</a>
-                <a href="Categoria.html">Categoria</a>
-                <a href="Añadir direccion.html">Añadir direccioón</a>
-                <a href="Ordenes.html">Ordenes</a>
-                <a href="carrito.html">carrito</a>
-                <a href="Wishlist.html">Wishlist</a>
-                <a href="Nosotros.html">Nosotros</a>
+            <a href="Inicio.html">Inicio</a>
+            <a href="Checkout.html">Checkout</a>
+            <a href="Categoria.html">Categoria</a>
+            <a href="Añadir direccion.html">Añadir dirección</a>
+            <a href="Ordenes.html">Órdenes</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="Wishlist.html">Wishlist</a>
+            <a href="Nosotros.html">Nosotros</a>
         </nav>
     </header>
 
-    <h2>Wishlist</h2>
-    <br><br>
-    <section id="Objeto">
-    <img src="" alt="">
-    <p>descripcion</p>
-    <p>precio</p>
-    <button>+ Añadir al carrito</button>
-    <button>Borrar</button>
-    <br>
-    </section>
+    <main>
+        <h2>Wishlist</h2>
+        <section class="wishlist-items">
+            <div class="wishlist-item">
+                <img src="product-placeholder.png" alt="Producto">
+                <div class="wishlist-details">
+                    <p>Descripción del producto</p>
+                    <p>Precio</p>
+                </div>
+                <div class="wishlist-actions">
+                    <button>+ Añadir al carrito</button>
+                    <button>Borrar</button>
+                </div>
+            </div>
+            <!-- Puedes duplicar el bloque .wishlist-item para más productos -->
+        </section>
+    </main>
 </body>
 </html>
