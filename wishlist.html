@@ -8,34 +8,35 @@
 </head>
 <body>
     <header>
-        <div class="top-nav">
-            <div class="logo">
-                <a href="Inicio.html"><img src="logo.png" alt="Logo"></a>
+        <div class="top-bar">
+            <div class="left">
+                <!-- Saludo al usuario y enlace a promociones -->
+                <span>Hola, [usuario]</span>
             </div>
-            <nav>
-                <a href="#">Hola, [usuario]</a> <!-- Considera cómo mostrar el nombre del usuario aquí -->
-            </nav>
-            <div class="search-bar">
+            <div class="right">
+                <!-- Enlaces a Wishlist, Órdenes y Carrito -->
+                <a href="#">Wishlist</a>
+                <a href="#">Órdenes</a>
+                <a href="#"><img src="icons-carrito-de-compras.gif" alt="Carrito"></a>
+            </div>
+        </div>
+        <div class="search-bar">
+            <!-- Logo del sitio -->
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="search">
+                <!-- Barra de búsqueda -->
                 <input type="text" placeholder="Search">
                 <button>Buscar</button>
             </div>
-            <nav>
-                <a href="Wishlist.html">Wishlist</a>
-                <a href="Ordenes.html">Órdenes</a>
-                <a href="carrito.html"><img src="icons-carrito-de-compras.gif" alt="Carrito"></a>
-            </nav>
-        </div>
-        <div class="bottom-nav">
-            <a href="#">Enviar a [dirección usuario]</a> <!-- Revisa la indentación y el contenido -->
+            <div class="advanced-search">
+                <!-- Enlace a búsqueda avanzada -->
+                <a href="#">Búsqueda avanzada</a>
+            </div>
         </div>
         <nav>
-            <a href="Inicio.html">Inicio</a>
-            <a href="Checkout.html">Checkout</a>
-            <a href="Categoria.html">Categoria</a>
-            <a href="Añadir direccion.html">Añadir dirección</a> <!-- Corrige el typo "dirección" -->
-            <a href="Ordenes.html">Órdenes</a>
-            <a href="carrito.html">Carrito</a>
-            <a href="Wishlist.html">Wishlist</a>
+            <!-- Enlaces de navegación -->
+                <a href="Inicio.html">Inicio</a>
+            <!-- Insertar jsp de categorías -->
             <a href="Nosotros.html">Nosotros</a>
         </nav>
     </header>
