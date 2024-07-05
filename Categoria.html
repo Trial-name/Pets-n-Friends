@@ -1,79 +1,92 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorías</title>
-    <!-- Enlace a la hoja de estilos CSS específica para categorías -->
-    <link rel="stylesheet" href="stylo categoria.css">
+  <!-- Especifica la codificación de caracteres y la configuración del viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Título de la página -->
+  <title>Productos</title>
+  <!-- Enlaza la hoja de estilos CSS -->
+  <link rel="stylesheet" href="stylo Productos.css" />
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="left">
-                <!-- Saludo al usuario y enlace a promociones -->
-                <span>Hola, [usuario]</span>
-            </div>
-            <div class="right">
-                <!-- Enlaces a Wishlist, Órdenes y Carrito -->
-                <a href="#">Wishlist</a>
-                <a href="#">Órdenes</a>
-                <a href="#"><img src="icons-carrito-de-compras.gif" alt="Carrito"></a>
-            </div>
-        </div>
-        <div class="search-bar">
-            <!-- Logo del sitio -->
-            <img src="logo.png" alt="Logo" class="logo">
-            <div class="search">
-                <!-- Barra de búsqueda -->
-                <input type="text" placeholder="Search">
-                <button>Buscar</button>
-            </div>
-            <div class="advanced-search">
-                <!-- Enlace a búsqueda avanzada -->
-                <a href="#">Búsqueda avanzada</a>
-            </div>
-        </div>
-        <nav>
-            <!-- Enlaces de navegación -->
-                <a href="Inicio.html">Inicio</a>
-            <!-- Insertar jsp de categorías -->
-            <a href="Nosotros.html">Nosotros</a>
-        </nav>
-    </header>
-    <main>
-        <!-- Título de la categoría -->
-        <h2>[Nombre de categoría]</h2>
-        <div class="product-grid">
-            <!-- Repetir este bloque para cada producto -->
-            <div class="product">
-                <!-- Imagen del producto -->
-                <img src="product-placeholder.png" alt="Producto">
-                <!-- Descripción del producto -->
-                <p class="description">Descripción del producto</p>
-                <!-- Precio del producto -->
-                <p class="price">$precio</p>
-                <!-- Fecha de entrega estimada -->
-                <p class="delivery">[fecha entrega estimada]</p>
-            </div>
-            <!-- Fin del bloque del producto -->
-        </div>
-        <!-- Repetir el contenedor de la cuadrícula de productos según sea necesario -->
-        <div class="product-grid">
-            <div class="product">
-                <img src="product-placeholder.png" alt="Producto">
-                <p class="description">Descripción del producto</p>
-                <p class="price">$precio</p>
-            </div>
-        </div>
-        <div class="product-grid">
-            <div class="product">
-                <img src="product-placeholder.png" alt="Producto">
-                <p class="description">Descripción del producto</p>
-                <p class="price">$precio</p>
-            </div>
-        </div>
-    </main>
+  <!-- Encabezado de la página -->
+  <header>
+    <!-- Barra superior con enlaces -->
+    <div class="top-bar">
+      <div class="left">
+        <!-- Enlace de promociones -->
+        <span>Bienvenido</span>
+        <a href="#">Promociones</a>
+      </div>
+      <div class="right">
+        <!-- Enlaces de wishlist y órdenes, con icono de carrito -->
+        <a href="#">Wishlist</a>
+        <a href="#">Órdenes</a>
+        <a href="#"><img src="icons-carrito-de-compras.gif" alt="Carrito" /></a>
+      </div>
+    </div>
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+      <!-- Logo de la empresa -->
+      <img src="logo.png" alt="Logo" class="logo" />
+      <div class="search">
+        <!-- Campo de búsqueda y botón -->
+        <input type="text" placeholder="Search" />
+        <button>Buscar</button>
+      </div>
+      <!-- Enlace a búsqueda avanzada -->
+      <div class="advanced-search">
+        <a href="#">Búsqueda avanzada</a>
+      </div>
+    </div>
+    <!-- Menú de navegación -->
+    <nav>
+      <a href="Inicio.html">Inicio</a>
+      <a href="Checkout.html">Checkout</a>
+      <a href="Productos.html">Producto</a>
+      <a href="Añadir direccion.html">Añadir dirección</a>
+      <a href="Ordenes.html">Órdenes</a>
+      <a href="carrito.html">Carrito</a>
+      <a href="Wishlist.html">Wishlist</a>
+      <a href="Nosotros.html">Nosotros</a>
+    </nav>
+  </header>
+  <!-- Contenido principal -->
+  <main>
+    <h2>Productos</h2>
+    <div class="product-grid">
+      <!-- Primer producto -->
+      <div class="product">
+        <img src="Productoventa1.png" alt="Producto" />
+        <p class="description">Descripción del producto</p>
+        <p class="price">$precio</p>
+      </div>
+      <!-- Segundo producto -->
+      <div class="product">
+        <img src="Productoventa2.png" alt="Producto" />
+        <p class="description">Cepillo de vapor para perros, cepillo de vapor 3 en 1 para gatos, cepillo de vapor de silicona para mascotas, cepillo de vapor recargable para gatos, cepillo para gatos y gatos, cepillo</p>
+        <p class="price">S$8.99</p>
+      </div>
+      <!-- Tercer producto -->
+      <div class="product">
+        <img src="Productoventa3.png" alt="Producto" />
+        <p class="description">Descripción del producto</p>
+        <p class="price">$precio</p>
+      </div>
+      <!-- Cuarto producto -->
+      <div class="product">
+        <img src="Productoventa4.png" alt="Producto" />
+        <p class="description">Descripción del producto</p>
+        <p class="price">$precio</p>
+      </div>
+      <!-- Quinto producto -->
+      <div class="product">
+        <img src="Productoventa5.png" alt="Producto" />
+        <p class="description">Descripción del producto</p>
+        <p class="price">$precio</p>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
