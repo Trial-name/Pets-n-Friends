@@ -1,105 +1,106 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    font-family: Arial, sans-serif; /* Establece la fuente del texto en Arial o sans-serif */
+    margin: 0; /* Elimina el margen exterior */
+    padding: 0; /* Elimina el relleno interior */
+    background-color: #f5f5f5; /* Fondo de color gris claro */
 }
 
+/* Estilos para el encabezado */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
+    display: flex; /* Usa flexbox para organizar elementos hijos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    padding: 10px 20px; /* Espaciado interno de 10px arriba y abajo, 20px a los lados */
+    background-color: #fff; /* Fondo de color blanco */
+    border-bottom: 1px solid #ccc; /* Borde inferior de 1px sólido en color gris claro */
 }
 
 header .logo img {
-    height: 50px;
+    height: 50px; /* Altura fija de 50px para el logotipo */
 }
 
 header h1 {
-    margin: 0;
-    font-size: 24px;
+    margin: 0; /* Elimina el margen exterior del título */
+    font-size: 24px; /* Tamaño de fuente de 24px para el título */
 }
 
 /* Estilos para la sección principal */
 main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    display: flex; /* Usa flexbox para organizar elementos hijos */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    padding: 20px; /* Espaciado interno de 20px en todas las direcciones */
 }
 
 /* Estilo para la sección izquierda */
 .left-section {
-    width: 65%;
+    width: 65%; /* Ancho del 65% del contenedor principal */
 }
 
 .left-section h2 {
-    margin-top: 0;
+    margin-top: 0; /* Elimina el margen superior del título */
 }
 
 .shipping, .payment, .order-verification {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Fondo de color blanco para los elementos */
+    padding: 15px; /* Espaciado interno de 15px */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 .order-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+    display: flex; /* Usa flexbox para organizar elementos hijos */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-bottom: 15px; /* Margen inferior de 15px */
 }
 
 .order-item img {
-    height: 50px;
-    margin-right: 10px;
+    height: 50px; /* Altura fija de 50px para las imágenes */
+    margin-right: 10px; /* Margen derecho de 10px */
 }
 
 /* Estilo para la sección derecha */
 .right-section {
-    width: 30%;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Ancho del 30% del contenedor principal */
+    background-color: #fff; /* Fondo de color blanco */
+    padding: 15px; /* Espaciado interno de 15px */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 .right-section h2 {
-    margin-top: 0;
+    margin-top: 0; /* Elimina el margen superior del título */
 }
 
 .right-section p {
-    margin: 10px 0;
+    margin: 10px 0; /* Margen de 10px arriba y abajo, 0 a los lados para los párrafos */
 }
 
 .right-section h3 {
-    margin: 20px 0;
+    margin: 20px 0; /* Margen de 20px arriba y abajo, 0 a los lados para los títulos */
 }
 
 .coupon {
-    display: flex;
-    align-items: center;
+    display: flex; /* Usa flexbox para organizar elementos hijos */
+    align-items: center; /* Centra verticalmente los elementos */
 }
 
 .coupon label {
-    margin-right: 10px;
+    margin-right: 10px; /* Margen derecho de 10px */
 }
 
 .coupon input {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 5px; /* Relleno interno de 5px */
+    border: 1px solid #ccc; /* Borde de 1px sólido en color gris claro */
+    border-radius: 5px; /* Bordes redondeados de 5px */
 }
 
 /* Estilo para el pie de página */
 footer {
-    padding: 10px 20px;
-    background-color: #fff;
-    border-top: 1px solid #ccc;
-    text-align: center;
-    font-size: 18px;
+    padding: 10px 20px; /* Espaciado interno de 10px arriba y abajo, 20px a los lados */
+    background-color: #fff; /* Fondo de color blanco */
+    border-top: 1px solid #ccc; /* Borde superior de 1px sólido en color gris claro */
+    text-align: center; /* Alineación centrada del texto */
+    font-size: 18px; /* Tamaño de fuente de 18px para el texto del pie de página */
 }
