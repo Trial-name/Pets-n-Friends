@@ -4,65 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Direcciones</title>
+    <!-- Enlace a la hoja de estilos CSS -->
     <link rel="stylesheet" href="unido.css" />
   </head>
   <body>
     <header>
       <div class="top-nav">
         <div class="logo">
-          <a href="Inicio.html">  <img src="logo.png" alt="Logo"></a>
+          <!-- Logo con enlace a la página de inicio -->
+          <a href="Inicio.html"><img src="logo.png" alt="Logo"></a>
         </div>
         <nav>
+          <!-- Enlace de bienvenida con el nombre del usuario -->
           <a href="#">Hola, [usuario]</a>
-          
         </nav>
         <div class="search-bar">
+          <!-- Barra de búsqueda -->
           <input type="text" placeholder="Search" />
           <button>Buscar</button>
         </div>
         <nav>
+          <!-- Enlaces de navegación -->
           <a href="Wishlist.html">Wishlist</a>
           <a href="Ordenes.html">Órdenes</a>
           <a href="carrito.html"><img src="icons-carrito-de-compras.gif" alt="Carrito" /></a>
         </nav>
       </div>
       <div class="bottom-nav">
+        <!-- Enlace de dirección del usuario -->
         <a href="#">Enviar a [dirección usuario]</a>
         <nav>
+          <!-- Más enlaces de navegación -->
           <a href="Inicio.html">Inicio</a>
           <a href="Checkout.html">Checkout</a>
           <a href="Categoria.html">Categoria</a>
-          <a href="Añadir direccion.html">Añadir direccioón</a>
-          <a href="Ordenes.html">Ordenes</a>
-          <a href="carrito.html">carrito</a>
+          <a href="Añadir direccion.html">Añadir dirección</a>
+          <a href="Ordenes.html">Órdenes</a>
+          <a href="carrito.html">Carrito</a>
           <a href="Wishlist.html">Wishlist</a>
           <a href="Nosotros.html">Nosotros</a>
-      </nav>
+        </nav>
       </div>
     </header>
     <main>
       <div class="addresses-container">
         <div class="your-addresses">
           <h2>Tus direcciones</h2>
+          <!-- Dirección 1 -->
           <div class="address">
             <input type="radio" name="selectedAddress" checked />
             <p>Dirección 1</p>
             <a href="#">Editar</a> | <a href="#">Borrar</a>
           </div>
+          <!-- Dirección 2 -->
           <div class="address">
             <input type="radio" name="selectedAddress" />
             <p>Dirección 2</p>
             <a href="#">Editar</a> | <a href="#">Borrar</a>
           </div>
+          <!-- Dirección 3 -->
           <div class="address">
             <input type="radio" name="selectedAddress" />
             <p>Dirección 3</p>
             <a href="#">Editar</a> | <a href="#">Borrar</a>
           </div>
+          <!-- Botón para añadir una nueva dirección -->
           <button class="add-address-btn">+</button>
         </div>
         <div class="new-address">
           <h2>Añadir nueva dirección</h2>
+          <!-- Formulario para añadir una nueva dirección -->
           <form action="addAddress.jsp" method="post">
             <label for="name">Nombre</label>
             <input type="text" id="name" name="name" required />
@@ -71,6 +82,7 @@
             <label for="address">Dirección</label>
             <input type="text" id="address" name="address" required />
 
+            <!-- Selector de corregimiento -->
             <label for="neighborhood">Corregimiento</label>
             <select name="neighborhood" id="neighborhood" required>
               <option value="" selected disabled>Seleccionar uno</option>
@@ -110,6 +122,7 @@
               <option value="Las Mañanitas">Las Mañanitas</option>
             </select>
 
+            <!-- Selector de distrito -->
             <label for="district">Distrito</label>
             <select name="district" id="district" required>
               <option value="" selected disabled>Seleccionar uno</option>
@@ -151,30 +164,10 @@
               <option value="Soná">Soná</option>
               <option value="Taboga">Taboga</option>
               <option value="Tolé">Tolé</option>
-              <option value="Tonosi">Tonosí</option>
+              <option value="Tonosí">Tonosí</option>
               <option value="Tupile">Tupile</option>
               <option value="Veraguas">Veraguas</option>
             </select>
 
-            <label for="province">Provincia</label>
-            <select name="province" id="province" required>
-              <option value="" selected disabled>Seleccionar uno</option>
-              <option value="Bocas del Toro">Bocas del Toro</option>
-              <option value="Chiriquí">Chiriquí</option>
-              <option value="Coclé">Coclé</option>
-              <option value="Colón">Colón</option>
-              <option value="Darién">Darién</option>
-              <option value="Herrera">Herrera</option>
-              <option value="Los Santos">Los Santos</option>
-              <option value="Panamá">Panamá</option>
-              <option value="Panamá Oeste">Panamá Oeste</option>
-              <option value="Veraguas">Veraguas</option>
-            </select>
-
-            <button type="submit">Añadir</button>
-          </form>
-        </div>
-      </div>
-    </main>
-  </body>
-</html>
+            <!-- Selector de provincia -->
+            <label for="province
