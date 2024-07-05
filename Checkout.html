@@ -10,20 +10,35 @@
 </head>
 <body>
     <header>
-        <!-- Logo del sitio -->
-        <div class="logo">
-            <a href="Inicio.html"><img src="logo.png" alt="Logo"></a>
+        <div class="top-bar">
+            <div class="left">
+                <!-- Saludo al usuario y enlace a promociones -->
+                <span>Hola, [usuario]</span>
+            </div>
+            <div class="right">
+                <!-- Enlaces a Wishlist, Órdenes y Carrito -->
+                <a href="#">Wishlist</a>
+                <a href="#">Órdenes</a>
+                <a href="#"><img src="icons-carrito-de-compras.gif" alt="Carrito"></a>
+            </div>
         </div>
-        <h1>CHECKOUT</h1>
+        <div class="search-bar">
+            <!-- Logo del sitio -->
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="search">
+                <!-- Barra de búsqueda -->
+                <input type="text" placeholder="Search">
+                <button>Buscar</button>
+            </div>
+            <div class="advanced-search">
+                <!-- Enlace a búsqueda avanzada -->
+                <a href="#">Búsqueda avanzada</a>
+            </div>
+        </div>
         <nav>
             <!-- Enlaces de navegación -->
-            <a href="Inicio.html">Inicio</a>
-            <a href="Checkout.html">Checkout</a>
-            <a href="Categoria.html">Categoría</a>
-            <a href="Añadir direccion.html">Añadir dirección</a>
-            <a href="Ordenes.html">Órdenes</a>
-            <a href="carrito.html">Carrito</a>
-            <a href="Wishlist.html">Wishlist</a>
+                <a href="Inicio.html">Inicio</a>
+            <!-- Insertar jsp de categorías -->
             <a href="Nosotros.html">Nosotros</a>
         </nav>
     </header>
