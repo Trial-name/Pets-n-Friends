@@ -1,132 +1,132 @@
 /* Estilo global para el cuerpo */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-y: scroll;
+    font-family: Arial, sans-serif; /* Establece la fuente del texto en Arial o sans-serif */
+    margin: 0; /* Elimina el margen exterior */
+    padding: 0; /* Elimina el relleno interior */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho y alto especificados */
+    overflow-y: scroll; /* Agrega una barra de desplazamiento vertical si el contenido excede el área visible */
 }
 
 /* Estilo para la barra superior */
 .top-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ccc;
+    display: flex; /* Usa flexbox para organizar elementos hijos */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    padding: 10px 20px; /* Espaciado interno de 10px arriba y abajo, 20px a los lados */
+    background-color: #f8f8f8; /* Fondo de color gris claro */
+    border-bottom: 1px solid #ccc; /* Borde inferior de 1px sólido en color gris claro */
 }
 
 .top-bar .left span {
-    margin-right: 10px;
+    margin-right: 10px; /* Margen derecho de 10px para separación */
 }
 
 .top-bar a {
-    margin-left: 10px;
-    text-decoration: none;
-    color: #000;
+    margin-left: 10px; /* Margen izquierdo de 10px para separación */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000; /* Color de texto negro */
 }
 
 /* Estilo para la barra de búsqueda */
 .search-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
+    display: flex; /* Usa flexbox para organizar elementos hijos */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px 20px; /* Espaciado interno de 10px arriba y abajo, 20px a los lados */
+    background-color: #fff; /* Fondo de color blanco */
+    border-bottom: 1px solid #ccc; /* Borde inferior de 1px sólido en color gris claro */
 }
 
 .search-bar .logo {
-    height: 50px;
+    height: 50px; /* Altura fija de 50px para el logotipo */
 }
 
 .search-bar .search {
-    flex-grow: 1;
-    margin: 0 20px;
-    display: flex;
+    flex-grow: 1; /* Permite que el elemento crezca para llenar el espacio disponible */
+    margin: 0 20px; /* Margen de 0 arriba y abajo, 20px a los lados */
+    display: flex; /* Usa flexbox para organizar elementos hijos */
 }
 
 .search-bar .search input {
-    flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
+    flex-grow: 1; /* Permite que el campo de entrada crezca para llenar el espacio disponible */
+    padding: 10px; /* Relleno interno de 10px */
+    border: 1px solid #ccc; /* Borde de 1px sólido en color gris claro */
+    border-radius: 5px 0 0 5px; /* Bordes redondeados en la esquina izquierda */
 }
 
 .search-bar .search button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #000;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
+    padding: 10px; /* Relleno interno de 10px */
+    border: 1px solid #ccc; /* Borde de 1px sólido en color gris claro */
+    background-color: #000; /* Fondo de color negro */
+    color: #fff; /* Color de texto blanco */
+    border-radius: 0 5px 5px 0; /* Bordes redondeados en la esquina derecha */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
 }
 
 .advanced-search a {
-    text-decoration: none;
-    color: #000;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000; /* Color de texto negro */
 }
 
 /* Estilo para la barra de navegación */
 nav {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ccc;
+    display: flex; /* Usa flexbox para organizar elementos hijos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    padding: 10px 0; /* Espaciado interno de 10px arriba y abajo, 0 a los lados */
+    background-color: #f8f8f8; /* Fondo de color gris claro */
+    border-bottom: 1px solid #ccc; /* Borde inferior de 1px sólido en color gris claro */
 }
 
 nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #000;
+    margin: 0 10px; /* Margen de 0 arriba y abajo, 10px a los lados */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000; /* Color de texto negro */
 }
 
 /* Estilo para el contenido principal */
 main {
-    padding: 20px;
+    padding: 20px; /* Espaciado interno de 20px en todas las direcciones */
 }
 
 main h2 {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Margen inferior de 20px */
 }
 
 /* Estilo para la cuadrícula de productos */
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    display: grid; /* Usa grid para organizar elementos hijos */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas automáticas que se ajustan al contenido */
+    gap: 20px; /* Espacio entre las filas y columnas de la cuadrícula */
 }
 
 /* Estilo para cada producto */
 .product {
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
+    background-color: #fff; /* Fondo de color blanco */
+    padding: 10px; /* Espaciado interno de 10px */
+    border: 1px solid #ccc; /* Borde de 1px sólido en color gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Alineación centrada del texto */
 }
 
 .product img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    max-width: 100%; /* Imagen con ancho máximo del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 10px; /* Margen inferior de 10px */
 }
 
 .product .description {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
+    font-size: 14px; /* Tamaño de fuente de 14px */
+    color: #666; /* Color de texto gris oscuro */
+    margin-bottom: 10px; /* Margen inferior de 10px */
 }
 
 .product .price {
-    font-size: 16px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 10px;
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    font-weight: bold; /* Texto en negrita */
+    color: #000; /* Color de texto negro */
+    margin-bottom: 10px; /* Margen inferior de 10px */
 }
 
 .product .delivery {
-    font-size: 12px;
-    color: #999;
+    font-size: 12px; /* Tamaño de fuente de 12px */
+    color: #999; /* Color de texto gris */
 }
