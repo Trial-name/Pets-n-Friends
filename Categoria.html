@@ -4,70 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorías</title>
+    <!-- Enlace a la hoja de estilos CSS específica para categorías -->
     <link rel="stylesheet" href="stylo categoria.css">
 </head>
 <body>
     <header>
         <div class="top-bar">
             <div class="left">
+                <!-- Saludo al usuario y enlace a promociones -->
                 <span>Hola, [usuario]</span>
                 <a href="#">Promociones</a>
             </div>
             <div class="right">
+                <!-- Enlaces a Wishlist, Órdenes y Carrito -->
                 <a href="#">Wishlist</a>
                 <a href="#">Órdenes</a>
                 <a href="#"><img src="icons-carrito-de-compras.gif" alt="Carrito"></a>
             </div>
         </div>
         <div class="search-bar">
+            <!-- Logo del sitio -->
             <img src="logo.png" alt="Logo" class="logo">
             <div class="search">
+                <!-- Barra de búsqueda -->
                 <input type="text" placeholder="Search">
                 <button>Buscar</button>
             </div>
             <div class="advanced-search">
+                <!-- Enlace a búsqueda avanzada -->
                 <a href="#">Búsqueda avanzada</a>
             </div>
         </div>
         <nav>
-           <a href="Inicio.html">Inicio</a>
+            <!-- Enlaces de navegación -->
+            <a href="Inicio.html">Inicio</a>
             <a href="Checkout.html">Checkout</a>
-            <a href="Categoria.html">Categoria</a>
-            <a href="Añadir direccion.html">Añadir direccioón</a>
-            <a href="Ordenes.html">Ordenes</a>
-            <a href="#">label</a>
-            <a href="#">label</a>
+            <a href="Categoria.html">Categoría</a>
+            <a href="Añadir direccion.html">Añadir dirección</a>
+            <a href="Ordenes.html">Órdenes</a>
+            <a href="#">Label</a>
+            <a href="#">Label</a>
         </nav>
     </header>
     <main>
+        <!-- Título de la categoría -->
         <h2>[Nombre de categoría]</h2>
         <div class="product-grid">
             <!-- Repetir este bloque para cada producto -->
             <div class="product">
+                <!-- Imagen del producto -->
                 <img src="product-placeholder.png" alt="Producto">
+                <!-- Descripción del producto -->
                 <p class="description">Descripción del producto</p>
+                <!-- Precio del producto -->
                 <p class="price">$precio</p>
+                <!-- Fecha de entrega estimada -->
                 <p class="delivery">[fecha entrega estimada]</p>
             </div>
             <!-- Fin del bloque del producto -->
+        </div>
+        <!-- Repetir el contenedor de la cuadrícula de productos según sea necesario -->
         <div class="product-grid">
-            <!-- Repetir este bloque para cada producto -->
             <div class="product">
                 <img src="product-placeholder.png" alt="Producto">
                 <p class="description">Descripción del producto</p>
                 <p class="price">$precio</p>
                 <p class="delivery">[fecha entrega estimada]</p>
             </div>
-            <!-- Fin del bloque del producto -->
+        </div>
         <div class="product-grid">
-            <!-- Repetir este bloque para cada producto -->
             <div class="product">
                 <img src="product-placeholder.png" alt="Producto">
                 <p class="description">Descripción del producto</p>
                 <p class="price">$precio</p>
                 <p class="delivery">[fecha entrega estimada]</p>
             </div>
-            <!-- Fin del bloque del producto -->
         </div>
     </main>
 </body>
