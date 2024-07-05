@@ -3,45 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Inicio</title>
     <!-- Enlace a la hoja de estilos CSS -->
     <link rel="stylesheet" href="unido.css">
 </head>
 <body>
     <header>
-        <div class="top-bar">
-            <div class="left">
-                <!-- Saludo al usuario y enlace a promociones -->
-                <span>Hola, [usuario]</span>
+        <div class="top-nav">
+            <div class="logo">
+                <!-- Enlace al inicio con logo -->
+                <a href="Inicio.html"><img src="logo.png" alt="Logo"></a>
             </div>
-            <div class="right">
-                <!-- Enlaces a Wishlist, Órdenes y Carrito -->
-                <a href="#">Wishlist</a>
-                <a href="#">Órdenes</a>
-                <a href="#"><img src="icons-carrito-de-compras.gif" alt="Carrito"></a>
-            </div>
-        </div>
-        <div class="search-bar">
-            <!-- Logo del sitio -->
-            <img src="logo.png" alt="Logo" class="logo">
-            <div class="search">
+            <nav>
+                <a href="#">Bienvenido</a>
+            </nav>
+            <div class="search-bar">
                 <!-- Barra de búsqueda -->
                 <input type="text" placeholder="Search">
                 <button>Buscar</button>
             </div>
-            <div class="advanced-search">
-                <!-- Enlace a búsqueda avanzada -->
-                <a href="#">Búsqueda avanzada</a>
-            </div>
+            <nav>
+                <!-- Enlaces de navegación -->
+                <a href="Wishlist.html">Wishlist</a>
+                <a href="Ordenes.html">Órdenes</a>
+                <a href="carrito.html"><img src="icons-carrito-de-compras.gif" alt="Carrito"></a>
+            </nav>
+        </div>
+        <div class="bottom-nav">
+            <!-- Enlace para dirección del usuario -->
+            <a href="#">Enviar a [dirección usuario]</a>
         </div>
         <nav>
-            <!-- Enlaces de navegación -->
-                <a href="Inicio.html">Inicio</a>
-            <!-- Insertar jsp de categorías -->
+            <!-- Menú de navegación -->
+            <a href="Inicio.html">Inicio</a>
+            <a href="Checkout.html">Checkout</a>
+            <a href="Productos.html">Productos</a>
+            <a href="Añadir direccion.html">Añadir dirección</a>
+            <a href="Ordenes.html">Órdenes</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="Wishlist.html">Wishlist</a>
             <a href="Nosotros.html">Nosotros</a>
         </nav>
     </header>
     <main>
+        <!-- Sección de noticias -->
+        <div class="news-section">
+            <h2>Noticias e Información Relevante</h2>
+            <div class="news-item">
+                <h3>Noticia 1: Los “días de perros” y el cuidado de nuestras mascotas</h3>
+                <p>“Se dice en inglés la frase “dog days of summer”, los días de perros del verano en español, se utiliza para describir estas jornadas calurosas y húmedas.”...</p>
+            </div>
+            <div class="news-item">
+                <h3>Noticia 2: ¿Cómo deben comportarse los perros en lugares públicos?, esto indican las reglas de etiqueta</h3>
+                <p>“Los lugares ‘Pet friendly’ tienen adaptado el establecimiento para que las mascotas puedan acompañar a sus dueños, sin embargo, no todas las personas gozan de la compañía de los perros y es por eso que se deben de considerar estas cosas si se desea salir con mascotas…”</p>
+            </div>
+            <div class="news-item">
+                <h3>Noticia 3: ¿Sabías? El abandono animal es una falta establecida en la ley 70</h3>
+                <p>“En Panamá, el abandono animal está regulado por la Ley 70 de 2012, que establece medidas para la protección de los animales domésticos y establece sanciones para quienes incurran en maltrato o abandono de estos animales…..”</p>
+            </div>
+        </div>
         <!-- Sección del carrusel de productos -->
         <div class="carousel">
             <div class="carousel-inner">
@@ -51,50 +71,52 @@
                 <img src="product-placeholder4.jpg" alt="Producto 4">
                 <img src="product-placeholder5.jpg" alt="Producto 5">
             </div>
+            <!-- Controles de navegación del carrusel -->
+            <div class="carousel-nav">
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
         </div>
+
         <!-- Sección de productos recomendados -->
         <div class="product-section">
             <h2>Productos para ti</h2>
             <div class="products">
                 <!-- Repetir este bloque para cada producto -->
                 <div class="product-item">
-                    <img src="product-placeholder7.jpg" alt="Producto">
+                    <img src="Productoventa1.png" alt="Producto">
+                    <div class="product-details">
+                        <p>neabot Neakasa P1 Pro Kit de aseo para mascotas y succión al vacío 99% pelo de mascotas, cortaúñas profesionales con 5 herramientas de aseo probadas para perros, gatos y otros animales</p>
+                        <p>US$129.99</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="Productoventa2.png" alt="Producto">
                     <div class="product-details">
                         <p>Alicate Cortauñas Small Trixie Conejo Cobayo Gato Huron</p>
                         <p>US$5.85</p>
-                        <p>[fecha entrega estimada]</p>
                     </div>
                 </div>
                 <div class="product-item">
-                    <img src="product-placeholder6.jpg" alt="Producto">
+                    <img src="Productoventa3.png" alt="Producto">
                     <div class="product-details">
-                        <p>Nombre del producto</p>
-                        <p>[precio]</p>
-                        <p>[fecha entrega estimada]</p>
+                        <p>Botones de entrenamiento grabables para perros, juego de 7 colores, botones para comunicación, zumbadores de entrenamiento de habla de perros, palabras claras y ya grabadas, volumen ajustable</p>
+                        <p>US$29.99</p>
+                     
                     </div>
                 </div>
                 <div class="product-item">
-                    <img src="product-placeholder.png" alt="Producto">
+                    <img src="Productoventa4.png" alt="Producto">
                     <div class="product-details">
-                        <p>Nombre del producto</p>
-                        <p>[precio]</p>
-                        <p>[fecha entrega estimada]</p>
+                        <p>Alicate Cortauñas Small Trixie Conejo Cobayo Gato Huron</p>
+                        <p>US$5.85</p>
                     </div>
                 </div>
                 <div class="product-item">
-                    <img src="product-placeholder.png" alt="Producto">
+                    <img src="Productoventa5.png" alt="Producto">
                     <div class="product-details">
-                        <p>Nombre del producto</p>
-                        <p>[precio]</p>
-                        <p>[fecha entrega estimada]</p>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="product-placeholder.png" alt="Producto">
-                    <div class="product-details">
-                        <p>Nombre del producto</p>
-                        <p>[precio]</p>
-                        <p>[fecha entrega estimada]</p>
+                        <p>Cesar Top Sirloin F&S 24 3.5Oz Fortificado Con Vitaminas y Minerales Para Ayudar A</p>
+                        <p>US$1.29</p>
                     </div>
                 </div>
                 <!-- Fin del bloque del producto -->
