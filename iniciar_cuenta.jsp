@@ -16,10 +16,10 @@
 	
 
 Class.forName("com.mysql.jdbc.Driver");
-Connection dbconection = DriverManager.getConnection("jdbc:mysql://localhost:3306/petsfriends","root","");
+Connection dbconection = DriverManager.getConnection("jdbc:mysql://localhost:3306/petshop","root","");
 Statement state = dbconection.createStatement();
 
-PreparedStatement verificar = dbconection.prepareStatement("SELECT * FROM cuenta_usuario WHERE email = ? AND contrasena = ?");
+PreparedStatement verificar = dbconection.prepareStatement("SELECT * FROM usuario WHERE email = ? AND contrasena = ?");
 verificar.setString(1, email);
 verificar.setString(2, contrasena);
 
