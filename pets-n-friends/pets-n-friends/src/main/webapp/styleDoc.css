@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+/* basic shi */
+body {
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header shi*/
+header{
+	width:100%;
+}
+
+footer{
+	width: 100%;
+}
+
+/* .nav shi*/
+#login-options{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	padding: 0 20px;
+}
+
+#nav-div{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	align-content:center;
+	background:#FA9E61;
+	border-bottom: 1px solid grey;
+}
+
+#navbar{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+#nav-div li{
+	list-style: none;
+	padding: 0 10px;
+}
+.nav-button{
+	text-decoration:none;
+	color: white;
+	font-size:16px;
+	font-weight:bold;
+	color:black;
+	transition: 0.2 ease;
+}
+
+.nav-button:hover,
+.nav-button.active{
+	color: #6f2dbd;
+}
+
+/*search shi*/
+#search-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+	background:#FA9E61;
+	border-bottom: 1px solid grey;
+}
+
+#search-bar{
+    flex-grow: 0.6;
+    margin: 0 20px;
+    display: flex;
+}
+	
+#search-bar input{
+    flex-grow: 0.6;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px 0 0 5px;
+}
+
+#search-bar button{
+    padding: 10px;
+    border: 1px solid #732fc6;
+    background-color: #732fc6;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#catg-div{
+	display:flex;
+	flex-direction:row;
+	justify-content: Center;
+	align-content:center;
+	background:#FA9E61;
+	border-bottom: 1px solid grey;
+	height: 20 px;
+}
+
+#categorias{
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+#catg-div li{
+	list-style: none;
+	padding: 0 10px;
+}
+/*footer shi*/
+footer{
+	display: flex;
+	justify-content:left;
+	align-content: center;
+	background: #FA9E61;
+}
+
+footer li{
+	list-style: none;
+	padding: 5px 0;
+}
+/*home shi*/
+
+/*login n register shi*/
+
+.container{
+	display:flex;
+	margin: 280px 0;
+	flex-direction: column;
+	padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.container div{
+	padding: 20px 0;
+}
+
+.form-header{
+	align-items: center;
+	justify-content: center;
+}
+.form-header h1{
+	font-size: 25px;
+	font-family: arial, helvetica,sans-serif;
+	font-weight: bold;
+	text-align:center;
+}
+
+.container #full-name{
+	display:flex;
+	gap: 30px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.container .full-name div{
+	width: 45%;
+}
+
+.container input[type="email"],
+.container input[type="password"], 
+.container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container input[type="submit"] {
+    background-color: #732fc6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+/*index shi*/
+#content{
+	margin:0 60px;
+}
+#news{
+	display:flex;
+	flex-direction:column;
+	gap: 30px;
+}
+
+#news a{
+	font-style:none;
+	text-decoration:none;
+	color:  black;
+}
+.news-item {
+    display: flex;
+    position: relative; 
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 2px solid grey;
+}
+
+.news-image {
+    width: 100%; 
+    max-width: 100%;
+    height: auto; 
+    border-radius:8px;
+    object-fit: cover; 
+}
+
+.info {
+    position: absolute; 
+    top: 0;
+    left: 40%;
+    padding: 20px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 60%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin-top: 0;
+    color: #666;
+}
+
+/*productos shi*/
+#products{
+	 display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    align-items:center;
+}
+.product-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px; /* Adjust width as needed */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-name {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-price {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-desc {
+    padding: 10px;
+    text-align: justify;
+}
+
+.product-buttons {
+    padding: 10px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/*orders shi*/
